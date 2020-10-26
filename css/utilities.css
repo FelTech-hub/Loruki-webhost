@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,300&display=swap');
+
+:root {
+  --primary-color: #047aed;
+  --light-color: #fff;
+  --secondary-color: #002240;
+  --box-shodow: 0 3px 5px rgba(0, 0, 0, 0.5);
+}
+.container {
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+.current {
+  color: #047aed !important;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.grid {
+  display: grid;
+  gap: 2rem;
+}
+
+i {
+  color: #002240;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.fixed-top {
+  position: sticky;
+  top: 0;
+  left: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Margin */
+.my-1 {
+  margin: 1rem 0;
+}
+
+.my-3 {
+  margin: 1.5rem 0;
+}
+
+/* Padding */
+.py-5 {
+  padding: 4rem 0;
+}
+
+.py-3 {
+  padding: 2rem 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-heading {
+  font-family: inherit;
+  font-size: 1.5rem;
+  /* width: 60%; */
+  font-weight: 300;
+  color: #333;
+  margin: 7rem 0 auto;
+}
+
+.para {
+  font-size: 1.2rem;
+  font-weight: 100;
+  font-family: 'Lato', sans-serif;
+  color: #002240;
+}
+
+.display-2 {
+  font-size: 2rem;
+  font-weight: 100;
+  font-family: 'Lato', sans-serif;
+  color: #002240;
+}
+
+.display-4 {
+  font-size: 3rem;
+  font-weight: 100;
+  font-family: 'Lato', sans-serif;
+}
+
+.lead {
+  font-size: 1rem;
+  font-size: 100;
+  font-family: 'Lato', sans-serif;
+}
+/* Button */
+.btn {
+  border-radius: 5px;
+  padding: 0.5rem 2rem;
+  text-decoration: none;
+  border: 0;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:hover {
+  transition: all 0.2s ease-in-out;
+  transform: scale(0.9);
+  cursor: pointer;
+}
+
+.btn-outline {
+  border: 1px solid #fff;
+  padding: 1rem 2rem;
+  color: #fff;
+}
+
+.btn-outline:hover,
+.btn-secondary:hover {
+  transition: all 0.2s ease-in-out;
+  padding: 0.9rem 1.9rem;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+.btn-secondary {
+  background-color: var(--secondary-color);
+  color: #fff;
+  padding: 1rem 2rem;
+  text-align: center;
+}
+
+.text-color {
+  color: #047aed;
+  font-weight: bold;
+}
+/* Button End */
+
+/* Baackground Color */
+.bg-light {
+  background-color: #f1f1f1;
+}
+
+.bg-primary {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.bg-success {
+  background-color: #5cb85c;
+  color: #fff;
+  padding: 0.5remrem 1rem;
+}
+.bg-dark {
+  background-color: #333;
+  color: #fff;
+  align-items: center;
+  padding-top: 1rem;
+}
+
+/* card  */
+.card {
+  background-color: var(--light-color);
+  padding: 2rem;
+  border-radius: 5px;
+  font-family: inherit;
+  box-shadow: var(--box-shodow);
+  animation: moveInRight 1s;
+  position: relative;
+  z-index: 2;
+}
+
+/* Form */
+.form-group {
+  padding: 1rem;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 1rem 0;
+  border: 0;
+  outline: 0;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Image Fluid */
+.fluid-img {
+  width: 100%;
+}
+
+.img {
+  width: 60%;
+  text-align: end;
+}
+
+/* Creating Animation */
+@keyframes moveInleft {
+  0% {
+    opacity: 0;
+    transform: translateX(-12rem);
+  }
+
+  80% {
+    transform: translateX(1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(12rem);
+  }
+
+  80% {
+    transform: translateX(1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+/* Media Query */
+
+@keyframes moveFromTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-12rem);
+  }
+
+  80% {
+    transform: translateY(1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveFromBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(12rem);
+  }
+
+  80% {
+    transform: translateY(1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+/* Media Queries */
+@media (max-width: 500px) {
+  /* .py-5 {
+    padding: 0.2rem 0;
+  } */
+  .btn-outline {
+    border: 1px solid #fff;
+    padding: 0.5rem 1rem;
+    color: #fff;
+    text-align: center;
+  }
+
+  /* Form */
+
+  .form-control,
+  .form-group {
+    padding: 0.5rem 0;
+  }
+
+  .card {
+    padding: 1rem;
+    animation: moveFromBottom 2s;
+  }
+
+  .text-heading {
+    margin: 12rem 0 auto;
+  }
+}

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/all.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/utilities.css" />
+    <link rel="icon" href="./images/favicon.png" type="image/png" />
+    <title>
+      Welcome to Loruki | A cloud base hosting website, Our Cloud computing
+      eliminates the capital expense of buying hardware and software and setting
+      up and running on-site datacenters—the racks of servers, the
+      round-the-clock electricity for power and cooling, and the IT experts for
+      managing the infrastructure. It adds up fast.
+    </title>
+  </head>
+  <body>
+    <!-- Nav Section -->
+    <div class="navbar border-bottom fixed-top">
+      <div class="container flex">
+        <a href="index.html" class="brand-logo">Loruki.</a>
+        <nav>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="features.html" class="nav-link">Feature</a>
+            </li>
+            <li class="nav-item">
+              <a href="docs.html" class="nav-link">Docs</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <!-- --Nav End-- -->
+
+    <!-- Showcase Section -->
+    <div class="py-3 bg-primary">
+      <div class="container grid grid-showcase">
+        <div class="showcase-feature-text">
+          <h1 class="display-4 my-1">Features</h1>
+          <p class="lead">
+            Check out the features of Loruki that separate us from the
+            competition
+          </p>
+        </div>
+        <div class="showcase-feature-img">
+          <img src="./images/server.png" alt="" class="img" />
+        </div>
+      </div>
+    </div>
+    <!-- Showcase End -->
+
+    <!-- Offer -->
+    <div class="py-5 bg-light">
+      <div class="container grid grid-showcase">
+        <div class="showcase-feature-text">
+          <h1 class="display-2 my-1">The Loruki Platform</h1>
+          <p class="para">
+            <span class="text-color">Loruki</span> is a cloud base hosting
+            platform, we host and manange cloud store, such as Platform As a
+            Service(PAS), Infastructure As a Service and Software As a
+            Service(SAS).
+          </p>
+        </div>
+        <div class="showcase-feature-img">
+          <img src="./images/server2.png" alt="" class="img" />
+        </div>
+      </div>
+    </div>
+    <!-- Offer End -->
+    <!-- Job -->
+    <section id="job" class="py-5">
+      <div class="container">
+        <div class="grid-items">
+          <div class="item1">
+            <i class="fa fa-server fa-3x" aria-hidden="true"></i>
+            <p>
+              In <span class="text-color">Loruki</span> Our Cloud servers are
+              Buld using virtualization software to divide a physical (bare
+              metal) server into multiple virtual servers. Our Organizations use
+              an infrastructure-as-a-service (IaaS) model to process workloads
+              and store information. They can access virtual server functions
+              remotely through an online interface..
+            </p>
+          </div>
+          <div class="item2">
+            <i class="fa fa-network-wired fa-3x" aria-hidden="true"></i>
+            <p>
+              Our Platform is build on IT infrastructure in which all our
+              organization’s network capabilities and resources are hosted, we
+              managed in-house or by a service provider, and available on
+              demand.
+            </p>
+          </div>
+          <div class="item3">
+            <i class="fa fa-laptop-code fa-3x" aria-hidden="true"></i>
+            <p>
+              We offer faster innovation, flexible resources, and economies of
+              scale.
+            </p>
+          </div>
+
+          <div class="item4">
+            <i class="fa fa-database fa-3x" aria-hidden="true"></i>
+            <p>
+              In <span class="text-color">Loruki</span> our database are
+              typically runs on a cloud computing platform, and access to the
+              database is provided as-a-service.
+            </p>
+          </div>
+          <div class="item5">
+            <i class="fa fa-power-off fa-3x" aria-hidden="true"></i>
+            <p>Our Services Run 24 hours without power interrupt.</p>
+          </div>
+          <div class="item6">
+            <i class="fa fa-upload fa-3x" aria-hidden="true"></i>
+            <p>
+              helping you lower your operating costs, run your infrastructure
+              more efficiently, and scale as your business needs change.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-5">
+      <div class="container flex-footer">
+        <div class="footer-text">
+          <h1 class="my-3">Loruki.</h1>
+          <p>Copyright &copy; <span class="year"></span></p>
+        </div>
+        <ul class="footer-nav">
+          <li><a href="index.html" class="footer-nav">Home</a></li>
+          <li><a href="features.html" class="footer-nav">Features</a></li>
+          <li><a href="docs.html" class="footer-nav">Docs</a></li>
+        </ul>
+        <div class="social-media">
+          <p>Follow Us</p>
+          <i class="fab fa-github fa-2x"></i>
+          <i class="fab fa-facebook fa-2x"></i>
+          <i class="fab fa-instagram fa-2x"></i>
+          <i class="fab fa-twitter fa-2x"></i>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Js -->
+    <script>
+      let year = document.querySelector('.year')
+      let date = new Date()
+      year.innerHTML = date.getFullYear()
+    </script>
+  </body>
+</html>

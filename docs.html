@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/all.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/utilities.css" />
+    <link rel="icon" href="./images/favicon.png" type="image/png" />
+    <title>
+      Welcome to Loruki | A cloud base hosting website, Our Cloud computing
+      eliminates the capital expense of buying hardware and software and setting
+      up and running on-site datacenters—the racks of servers, the
+      round-the-clock electricity for power and cooling, and the IT experts for
+      managing the infrastructure. It adds up fast.
+    </title>
+  </head>
+  <body>
+    <!-- Nav Section -->
+    <div class="navbar border-bottom fixed-top">
+      <div class="container flex">
+        <a href="index.html" class="brand-logo">Loruki.</a>
+        <nav>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="features.html" class="nav-link">Feature</a>
+            </li>
+            <li class="nav-item">
+              <a href="docs.html" class="nav-link">Docs</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <!-- --Nav End-- -->
+
+    <!-- Showcase Section -->
+    <div class="py-3 bg-primary">
+      <div class="container grid grid-showcase">
+        <div class="showcase-feature-text">
+          <h1 class="display-4 my-1">Docs</h1>
+          <p>
+            If you have a quickly growing website, there will come a time when
+            shared hosting is not enough. With that in mind, cloud hosting is
+            here to give you the best of two worlds. The power and reliability
+            of a VPS with the simplicity of shared hosting. Get dedicated
+            resources and let us take care of all the technical stuff!
+          </p>
+        </div>
+        <div class="showcase-feature-img">
+          <img src="./images/docs.png" alt="" class="img" />
+        </div>
+      </div>
+    </div>
+    <!-- Showcase End -->
+    <section id="docs" class="py-5">
+      <div class="container grid docs-grid">
+        <div class="essential">
+          <h3>Essentials</h3>
+          <ul>
+            <li><a href="#" class="current">Intoduction</a></li>
+            <li><a href="#">About Loruki</a></li>
+            <li><a href="#">Installation</a></li>
+          </ul>
+          <h3>Delopment</h3>
+          <ul>
+            <li><a href="#">Setting up a container</a></li>
+            <li><a href="#">Using the CLI</a></li>
+            <li><a href="#"> Managing resources</a></li>
+            <li><a href="#">Upgrade & downgrade</a></li>
+          </ul>
+        </div>
+        <div class="intoduction">
+          <h3>Introduction</h3>
+          <p>
+            Unlike traditional shared hosting, Loruki.net Cloud Hosting assigns
+            dedicated resources to each Cloud Server, rather than many different
+            users’ websites and applications competing for computing resources.
+            Each Cloud Server receives a partitioned drive with storage space
+            only accessible from within their own operating instance. Each
+            server is assigned a dedicated amount of RAM and CPU cores
+            (threads).
+          </p>
+          <div class="info bg-success">
+            <i class="fas fa-info"></i>
+            <p>
+              <span class="text-color">Loruki</span> has the ability to increase
+              the size of a server on demand in seconds.
+            </p>
+          </div>
+          <h3>How to install Loruki package</h3>
+          <p>
+            You can istall using brew, npm or yarn using Cl or git bash on your
+            System.
+          </p>
+          <a href="" class="btn btn-primary">Install CLI</a>
+          <h3>Requirements</h3>
+          <h5>Windows 10, Mac OSX, Linux</h5>
+          <h5>Node.js v12 or higher</h5>
+
+          <h3>Install</h3>
+          <p>Mac (Homebrew)</p>
+          <pre class="bg-dark">
+          <code>$ brew install loruki-cli</code>
+          </pre>
+          <p class="my-1">NPM</p>
+          <pre class="bg-dark">
+          <code>$ npm install loruki-cli</code>
+          </pre>
+          <p class="my-1">Yarn</p>
+          <pre class="bg-dark">
+          <code>$ yarn install loruki-cli</code>
+          </pre>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="py-5">
+      <div class="container flex-footer">
+        <div class="footer-text">
+          <h1 class="my-3">Loruki.</h1>
+          <p>Copyright &copy; <span class="year"></span></p>
+        </div>
+        <ul class="footer-nav">
+          <li><a href="index.html" class="footer-nav">Home</a></li>
+          <li><a href="features.html" class="footer-nav">Features</a></li>
+          <li><a href="docs.html" class="footer-nav">Docs</a></li>
+        </ul>
+        <div class="social-media">
+          <p>Follow Us</p>
+          <i class="fab fa-github fa-2x"></i>
+          <i class="fab fa-facebook fa-2x"></i>
+          <i class="fab fa-instagram fa-2x"></i>
+          <i class="fab fa-twitter fa-2x"></i>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Js -->
+    <script>
+      let year = document.querySelector('.year')
+      let date = new Date()
+      year.innerHTML = date.getFullYear()
+    </script>
+  </body>
+</html>
