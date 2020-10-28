@@ -291,11 +291,11 @@ nav .navbar-nav {
   border-radius: 0.5rem;
   box-shadow: var(--box-shodow);
   height: 500px;
-  padding: 1rem 2rem;
+  padding: 1rem;
 }
 
 .essential h3 {
-  padding: 1rem 0;
+  padding: 0.5rem 0;
   color: #254d70;
 }
 
@@ -303,10 +303,10 @@ nav .navbar-nav {
   list-style: none;
   padding-bottom: 0.5rem;
   cursor: pointer;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   border-bottom: 2px solid #ccc;
 
-  font-size: 0.8;
+  font-size: 0.5;
 }
 
 .essential ul li a {
@@ -316,7 +316,7 @@ nav .navbar-nav {
 
 .essential ul li a:hover {
   color: #254d70;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 .intoduction {
@@ -526,5 +526,28 @@ footer .social-media {
   /* Docs */
   .docs-grid {
     grid-template-columns: 1fr;
+  }
+
+  .essential,
+  .intoduction {
+    width: 250px;
+    text-align: center;
+  }
+
+  .intoduction h3,
+  .intoduction p {
+    font-size: 1rem;
+  }
+
+  .info {
+    flex-direction: column;
+  }
+
+  .info p {
+    font-size: 0.7rem;
+  }
+
+  pre code {
+    display: block;
   }
 }
