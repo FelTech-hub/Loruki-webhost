@@ -27,6 +27,11 @@ body {
   background-color: var(--primary-color);
   width: 100%;
 }
+
+.hidden {
+  visibility: hidden;
+  height: 0;
+}
 /* logo */
 .brand-logo {
   text-decoration: none;
