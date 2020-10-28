@@ -184,7 +184,7 @@ nav .navbar-nav {
   height: 200px;
 }
 .grid-support {
-  grid-template-columns: repeat(8, 1fr);
+  grid-template-columns: repeat(7, 1fr);
   padding: 3rem 0;
 }
 
