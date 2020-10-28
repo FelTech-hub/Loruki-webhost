@@ -65,6 +65,7 @@ nav .navbar-nav {
   background-color: var(--primary-color);
   height: 400px;
   position: relative;
+  padding: 4rem 0;
 }
 
 #showcase::before,
@@ -411,8 +412,13 @@ footer .social-media {
     flex-direction: column;
   }
 
+  #showcase {
+    padding: 0.2rem 0;
+  }
+
   .showcase-text {
     animation: moveFromTop 2s;
+    margin-bottom: 1rem;
   }
 
   .grid-showcase {
